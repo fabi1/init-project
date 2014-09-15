@@ -1,0 +1,4 @@
+init-project
+============
+
+Boilerplate projet
