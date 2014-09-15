@@ -1,0 +1,19 @@
+@mixin fontsize($sizeValue: 1.6) {
+  font-size: ($sizeValue * $default-font-size+px);
+  font-size: $sizeValue + rem;
+}
+@mixin lineheight($sizeValue: 1.6) {
+  line-height: ($sizeValue * $default-font-size+px);
+  line-height: $sizeValue + rem;
+}
+
+/*
+	From Google
+	font-family: 'fontname', sans-serif;
+*/
+.fontname,
+.classname,
+body{
+	font-family:'fontname', Arial, sans-serif; 
+  font-weight: 400;
+}

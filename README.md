@@ -1,4 +1,4 @@
 init-project
 ============
 
-Boilerplate projet
+Frontend base (boilerplate)

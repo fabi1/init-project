@@ -1,0 +1,87 @@
+/********************************/
+/*	General   					*/
+/********************************/
+.form-input, 
+input, 
+textarea, 
+.form-input *, 
+.custom-select, 
+.customSelectInner, 
+input[type='radio'] + label, 
+input[type='checkbox'] + label,
+.form-tooltip {
+	@include box-sizing(border-box);
+}
+
+input[type=file] {
+	cursor: pointer;
+}
+
+input {
+	@include appearance(none);
+	border: none;
+	width: 100%;
+}
+
+input.button {
+	height: auto;
+}
+
+textarea {
+	border: none;
+	@include border-radius(3px);
+	@include fontsize(1.6);
+}
+
+input.no-border {
+	@include border-radius(0);
+}
+
+.placeholder { 
+	color: $black; 
+}
+
+/********************************/
+/*	Focus   					*/
+/********************************/
+input:focus,
+textarea:focus,
+.custom-select.customSelectFocus {
+	@include box-shadow(inset 1px 1px 1px rgba($black, 0.3));
+}
+
+input.button:focus {
+	@include box-shadow(none);
+}
+
+/********************************/
+/*	Checkbox / radio     		*/
+/********************************/
+.form-checkbox {
+	vertical-align: middle;
+	overflow: hidden;
+	margin-bottom: 10px;
+}
+
+input[type='radio'], 
+input[type='checkbox'] {
+    opacity: 0;
+    float: left;
+    width: 0;
+    height: 0;
+}
+input[type='radio'] + label,
+input[type='checkbox'] + label {
+	background-repeat: no-repeat;
+	background-position: 0 0;
+    clear: none;
+    color: $white;
+    cursor: pointer;
+    display: inline-block;
+    height: 24px;
+    line-height: 24px;
+    margin: 0;
+	padding-left: 34px;
+	width: 100%;
+    @include fontsize(1.6);
+}
